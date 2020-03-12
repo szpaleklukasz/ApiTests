@@ -1,0 +1,21 @@
+[
+  {
+    "testCaseName": "Get all authors",
+    "jira": "https://tracker.intive.com/jira/browse/PATRON2020-81",
+    "testId": "getAllAuthors",
+    "resourceCorrelationId": "allAuthors",
+    "requestData":{
+      "httpMethod": "GET",
+      "baseUri": "https://patronage20-js-master.herokuapp.com/api/v1",
+      "path": "/authors",
+      "headers": {        
+        "Accept": "application/json"
+      }
+    },
+    "responseData": {
+      "httpStatus": 200,
+      "jsonSchemaFileName": "getAllAuthorsResponseSchema.json",
+      "jsonValuesFileName": "getAllAuthorsResponseValues.json"
+    }
+  }
+]

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SmartDom API tests" configfailurepolicy="continue">
+        
+    <test name="[GET /authors] -> Get all authors data">
+        <parameter name="GetAllAuthorsTest" value="getAllAuthors.json"/>
+        <classes>
+            <class name="org.intive.patronage.services.test.GetAllAuthorsTest"/>
+        </classes>
+    </test>
+</suite>
